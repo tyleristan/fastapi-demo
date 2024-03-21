@@ -45,6 +45,11 @@ def divide_me(number_1: int, number_2: int):
     div = number_2 / number_1
     return {"quotient": div}
 
+@app.get("/multiply/{number_1}/{number_2}")
+def multiply_me(number_1: int, number_2: int):
+    mul = number_1 * number_2
+    return {"product": mul}
+    
 ## Parameters
 # Introduce parameter data types and defaults from the Optional library
 @app.get("/items/{item_id}")
@@ -104,3 +109,4 @@ def fetch_buckets():
     response = s3.list_buckets()
     buckets = response['Buckets']
     return {"buckets": buckets}
+
