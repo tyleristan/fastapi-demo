@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
-from fastapi import FastAPI
+from fastapi import FastAPIsu
 from typing import Optional
 from pydantic import BaseModel
 import json
 import requests
 import boto3
 
-app = FastAPI()
+app = FastAPI() 
 
 # The URL for this API has a /docs endpoint that lets you see and test
 # your various endpoints/methods.
@@ -54,6 +54,7 @@ def multiply_me(number_1: int, number_2: int):
 def power_to(number_1: int, number_2: int):
     pow = number_1 ** number_2
     return {"result": pow}
+
 ## Parameters
 # Introduce parameter data types and defaults from the Optional library
 @app.get("/items/{item_id}")
