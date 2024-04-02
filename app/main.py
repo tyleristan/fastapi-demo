@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from fastapi import FastAPIsu
+from fastapi import FastAPI
 from typing import Optional
 from pydantic import BaseModel
 from fastapi.staticfiles import staticfiles
