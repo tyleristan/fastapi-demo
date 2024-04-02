@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
+import os
+import MySQLdb
+from fastapi.staticfiles import StaticFiles
 from fastapi import FastAPI
 from typing import Optional
 from pydantic import BaseModel
-from fastapi.staticfiles import staticfiles
-import os
-import MySQLdb
 import json
 import requests
 import boto3
